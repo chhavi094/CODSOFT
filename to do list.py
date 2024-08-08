@@ -9,20 +9,16 @@ class ToDoApp:
         
         self.tasks = []
         
-        # Set up the GUI
         self.setup_gui()
         
     def setup_gui(self):
-        # Task listbox
         self.task_listbox = tk.Listbox(self.root, selectmode=tk.SINGLE, width=50, height=15)
         self.task_listbox.pack(pady=20)
         
-        # Buttons
         tk.Button(self.root, text="Add Task", command=self.add_task).pack(pady=5)
         tk.Button(self.root, text="Update Task", command=self.update_task).pack(pady=5)
         tk.Button(self.root, text="Delete Task", command=self.delete_task).pack(pady=5)
         
-        # Load tasks
         self.load_tasks()
         self.update_task_listbox()
         
