@@ -6,9 +6,7 @@ class ToDoApp:
     def __init__(self, root):
         self.root = root
         self.root.title("To-Do List Application")
-        
         self.tasks = []
-        
         self.setup_gui()
         
     def setup_gui(self):
